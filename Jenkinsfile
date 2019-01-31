@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo env.Var1
+                echo env.JENKINS_URL
             }
         }
     }
