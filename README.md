@@ -2,7 +2,7 @@
 This design document outlines the way, the monitoring configuration file is being designed. It explains the steps required to understand the existing configuration & add up any new configuration for an existing component to be displayed on the AWS Cloudwatch monitoring dashboard.
 
 `MonitoringConfiguration.json` is a JSON file that stores information related to all the metrics to be displayed on the cloudwatch dashboard. At present, the AWS services included as metrics in the configuration file are - **S3, Lambda, DynamoDB, Transfer & ECS.**
->There are some other custom metrics like the activity/file pending count of each service type on state machine which are handled via the Lambda function.
+>There are some other custom metrics like the activity/file pending count of each service type on state machine which are created via the Lambda function.
 
 ## S3
 The configuration file has the name of the AWS service (S3) as a key at the top level. For each AWS S3 service, we can have entries of multiple buckets. For each bucket, we can have entries of multiple metrics along with their refresh interval time in seconds.
