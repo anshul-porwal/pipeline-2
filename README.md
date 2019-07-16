@@ -22,23 +22,22 @@ Let's take a look at the snippet of the configuration of S3 service -
 
 ```
 "S3": [{
-		"bucketName": "<name-of-the-bucket>",
-		"region": "<name-of-the-aws-region>",
-		"metricName": [{
-				"awsMetric": "NumberOfObjects",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "BucketSizeBytes",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "PutRequests",
-				"refreshIntervalInSec": <time-in-seconds>
-			}
-		]
-	}
-]
+	"bucketName": "<name-of-the-bucket>",
+	"region": "<name-of-the-aws-region>",
+	"metricName": [{
+			"awsMetric": "NumberOfObjects",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "BucketSizeBytes",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "PutRequests",
+			"refreshIntervalInSec": <time-in-seconds>
+		}
+	]
+}]
 ```
 
 ## Usecases
@@ -56,27 +55,26 @@ After adding the above snippet, it should look like this -
 
 ```
 "S3": [{
-		"bucketName": "<name-of-the-bucket>",
-		"region": "<name-of-the-aws-region>",
-		"metricName": [{
-				"awsMetric": "NumberOfObjects",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "BucketSizeBytes",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "PutRequests",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-            {
-	            "awsMetric": "BytesUploaded",
-	            "refreshIntervalInSec": <time-in-seconds>
-            }
-		]
-	}
-]
+	"bucketName": "<name-of-the-bucket>",
+	"region": "<name-of-the-aws-region>",
+	"metricName": [{
+			"awsMetric": "NumberOfObjects",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "BucketSizeBytes",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "PutRequests",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+	            	"awsMetric": "BytesUploaded",
+	            	"refreshIntervalInSec": <time-in-seconds>
+            	}
+	]
+}]
 ```
 
 ### To add a new bucket along with a metric -
@@ -97,35 +95,34 @@ After adding the above snippet, it should look like this -
 
 ```
 "S3": [{
-		"bucketName": "<name-of-the-bucket>",
-		"region": "<name-of-the-aws-region>",
-		"metricName": [{
-				"awsMetric": "NumberOfObjects",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "BucketSizeBytes",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "PutRequests",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "BytesUploaded",
-				"refreshIntervalInSec": <time-in-seconds>
-			}
-		]
-	},
-	{
-		"bucketName": "<name-of-the-bucket>",
-		"region": "<name-of-the-aws-region>",
-		"metricName": [{
+	"bucketName": "<name-of-the-bucket>",
+	"region": "<name-of-the-aws-region>",
+	"metricName": [{
 			"awsMetric": "NumberOfObjects",
 			"refreshIntervalInSec": <time-in-seconds>
-        }]
-	}
-]
+		},
+		{
+			"awsMetric": "BucketSizeBytes",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "PutRequests",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "BytesUploaded",
+			"refreshIntervalInSec": <time-in-seconds>
+		}
+	]},
+	{
+	"bucketName": "<name-of-the-bucket>",
+	"region": "<name-of-the-aws-region>",
+	"metricName": [{
+			"awsMetric": "NumberOfObjects",
+			"refreshIntervalInSec": <time-in-seconds>
+        	}
+	]
+}]
 ```
 
 ### To remove a metric from an existing bucket -
@@ -142,23 +139,22 @@ After removing the above snippet, it should look like this -
 
 ```
 "S3": [{
-		"bucketName": "<name-of-the-bucket>",
-		"region": "<name-of-the-aws-region>",
-		"metricName": [{
-				"awsMetric": "NumberOfObjects",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "BucketSizeBytes",
-				"refreshIntervalInSec": <time-in-seconds>
-			},
-			{
-				"awsMetric": "PutRequests",
-				"refreshIntervalInSec": <time-in-seconds>
-			}
-		]
-	}
-]
+	"bucketName": "<name-of-the-bucket>",
+	"region": "<name-of-the-aws-region>",
+	"metricName": [{
+			"awsMetric": "NumberOfObjects",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "BucketSizeBytes",
+			"refreshIntervalInSec": <time-in-seconds>
+		},
+		{
+			"awsMetric": "PutRequests",
+			"refreshIntervalInSec": <time-in-seconds>
+		}
+	]
+}]
 ```
 
 ## Lambda
