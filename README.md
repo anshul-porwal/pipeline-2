@@ -42,7 +42,7 @@ Let's take a look at the snippet of the configuration of S3 service -
 
 ## Usecases
 ### To add a new metric for an existing bucket -
-If a user wants to add a new metric i.e. BytesUploaded for an existing bucket entry, add below snippet in the bucket configuration -
+If a user wants to add a new metric i.e. **BytesUploaded** for an existing bucket entry, add below snippet in the bucket configuration -
 
 ```
 {
@@ -78,7 +78,7 @@ After adding the above snippet, it should look like this -
 ```
 
 ### To add a new bucket along with a metric -
-If a user wants to add a new bucket and monitor just a single metric over it i.e. NumberOfObjects, add below snippet in the S3 configuration -
+If a user wants to add a new bucket and monitor just a single metric over it i.e. **NumberOfObjects**, add below snippet in the S3 configuration -
 
 ```
 {
@@ -126,7 +126,7 @@ After adding the above snippet, it should look like this -
 ```
 
 ### To remove a metric from an existing bucket -
-If a user wants to remove a metric i.e. BytesUploaded from an existing bucket entry, remove below snippet from the bucket configuration -
+If a user wants to remove a metric i.e. **BytesUploaded** from an existing bucket entry, remove below snippet from the bucket configuration -
 
 ```
 {
