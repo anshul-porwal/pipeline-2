@@ -112,8 +112,7 @@ After adding the above snippet, it should look like this -
 		{
 			"awsMetric": "BytesUploaded",
 			"refreshIntervalInSec": <time-in-seconds>
-		}
-	]
+	 }]
       },
       {
 	"bucketName": "<name-of-the-bucket>",
