@@ -113,16 +113,17 @@ After adding the above snippet, it should look like this -
 			"awsMetric": "BytesUploaded",
 			"refreshIntervalInSec": <time-in-seconds>
 		}
-	]},
-	{
+	]
+      },
+      {
 	"bucketName": "<name-of-the-bucket>",
 	"region": "<name-of-the-aws-region>",
 	"metricName": [{
 			"awsMetric": "NumberOfObjects",
 			"refreshIntervalInSec": <time-in-seconds>
-        	}
-	]
-}]
+        	}]
+      }
+]
 ```
 
 ### To remove a metric from an existing bucket -
